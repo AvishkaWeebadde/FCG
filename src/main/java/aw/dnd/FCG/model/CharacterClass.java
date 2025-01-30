@@ -22,9 +22,5 @@ public class CharacterClass {
     private String description;
 
     @OneToMany(mappedBy = "characterClass", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Character> characters;
-
-    @OneToMany(mappedBy = "characterClass", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Backstory> backstories;
-
+    private List<DnDCharacter> characters;
 }

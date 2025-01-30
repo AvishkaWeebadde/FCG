@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -12,16 +14,7 @@ import lombok.NoArgsConstructor;
 public class Backstory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long backstoryId;
+    private UUID backstoryId;
 
     private String description;
-
-    @ManyToOne
-    @JoinColumn(name = "race_id")
-    private Race race;
-
-    @ManyToOne
-    @JoinColumn(name = "class_id")
-    private CharacterClass characterClass;
-
 }

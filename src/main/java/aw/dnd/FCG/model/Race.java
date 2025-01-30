@@ -23,8 +23,5 @@ public class Race {
     private String description;
 
     @OneToMany(mappedBy = "race", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Character> characters;
-
-    @OneToMany(mappedBy = "race", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Backstory> backstories;
+    private List<DnDCharacter> characters;
 }

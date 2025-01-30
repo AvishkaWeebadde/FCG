@@ -25,5 +25,5 @@ public class Stats {
     private int charisma;
 
     @OneToOne(mappedBy = "stats")
-    private Character character;
+    private DnDCharacter character;
 }

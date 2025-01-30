@@ -12,7 +12,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Character {
+public class DnDCharacter {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
